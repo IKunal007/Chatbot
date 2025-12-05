@@ -1,0 +1,42 @@
+=== Chat Transcript ===
+
+User: Hi
+Sentiment: Neutral (compound=0.0)
+Bot: Hey! How can I help you today?
+----------------------------------------
+User: Today's temperature is too high
+Sentiment: Neutral (compound=0.0)
+Bot: Hello! How can I assist you today?
+----------------------------------------
+User: That was very good
+Sentiment: Positive (compound=0.4927)
+Bot: Anytime!
+----------------------------------------
+User: i am happy today
+Sentiment: Positive (compound=0.5719)
+Bot: Awesome! Let me know if there's anything more I can do.
+----------------------------------------
+User: why are you so bad
+Sentiment: Negative (compound=-0.6696)
+Bot: Thanks for telling me. I'll help you with this.
+----------------------------------------
+User: Your service disappoints me
+Sentiment: Negative (compound=-0.3818)
+Bot: I'm sorry to hear that. Could you share more details?
+----------------------------------------
+User: You are very dissapointing
+Sentiment: Neutral (compound=0.0)
+Bot: I'm doing great! Thanks for asking. How about you?
+----------------------------------------
+User: You are very disapointing
+Sentiment: Neutral (compound=0.0)
+Bot: All good here! How is your day going?
+----------------------------------------
+User: You are very disappointing
+Sentiment: Negative (compound=-0.5413)
+Bot: I'm doing great! Thanks for asking. How about you?
+----------------------------------------
+User: okay bye
+Sentiment: Positive (compound=0.2263)
+Bot: Goodbye!
+----------------------------------------

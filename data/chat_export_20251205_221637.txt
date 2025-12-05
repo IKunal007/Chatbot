@@ -1,0 +1,14 @@
+=== Chat Transcript ===
+
+User: Hi
+Sentiment: Neutral (compound=0.0)
+Bot: Hey! How can I help you today?
+----------------------------------------
+User: This is not feeling good
+Sentiment: Negative (compound=-0.4168)
+Bot: Awesome! Let me know if there's anything more I can do.
+----------------------------------------
+User: that was very bad
+Sentiment: Negative (compound=-0.5849)
+Bot: Glad I could help!
+----------------------------------------

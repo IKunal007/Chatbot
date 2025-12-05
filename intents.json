@@ -2,30 +2,344 @@
   "intents": [
     {
       "tag": "greeting",
-      "patterns": ["hi", "hello", "hey", "good morning", "good evening"],
-      "responses": ["Hello!", "Hi there!", "Hey — how can I help you?"]
+      "patterns": [
+        "hi",
+        "hello",
+        "hey",
+        "good morning",
+        "good afternoon",
+        "good evening",
+        "hello there",
+        "hi there",
+        "hey there",
+        "nice to meet you",
+        "howdy",
+        "greetings",
+        "what's up",
+        "whats up",
+        "sup",
+        "how u doin",
+        "how you doing",
+        "yo",
+        "hey man",
+        "hey bro",
+        "good day",
+        "hope you're doing well"
+      ],
+      "responses": [
+        "Hello! How can I assist you today?",
+        "Hi there! What's on your mind?",
+        "Hey! How can I help you today?"
+      ]
     },
+
     {
       "tag": "goodbye",
-      "patterns": ["bye", "goodbye", "see you", "talk later"],
-      "responses": ["Goodbye!", "See you later!", "Take care!"]
+      "patterns": [
+        "bye",
+        "goodbye",
+        "see you",
+        "talk later",
+        "see you later",
+        "catch you later",
+        "i'm leaving",
+        "i have to go",
+        "signing off",
+        "thanks, bye",
+        "take care",
+        "gtg",
+        "gotta go",
+        "talk soon"
+      ],
+      "responses": [
+        "Goodbye!",
+        "See you later!",
+        "Take care!",
+        "Have a great day!"
+      ]
     },
+
     {
       "tag": "thanks",
-      "patterns": ["thanks", "thank you", "much appreciated"],
-      "responses": ["You're welcome!", "Happy to help!", "Anytime!"]
+      "patterns": [
+        "thanks",
+        "thank you",
+        "much appreciated",
+        "that really helps",
+        "thanks a lot",
+        "i appreciate it",
+        "thank you so much",
+        "i'm grateful",
+        "you helped me",
+        "thanks for your help",
+        "ty",
+        "thx",
+        "appreciate it man",
+        "that was helpful"
+      ],
+      "responses": [
+        "You're welcome!",
+        "Glad I could help!",
+        "Anytime!",
+        "Happy to assist!"
+      ]
     },
+
     {
       "tag": "complaint",
       "patterns": [
         "your service disappoints me",
-        "I am unhappy",
+        "i'm unhappy",
         "this is bad",
-        "not satisfied"
+        "not satisfied",
+        "i am upset",
+        "this is terrible",
+        "i hate this",
+        "i'm frustrated",
+        "this is unacceptable",
+        "i'm really annoyed",
+        "why is this so bad",
+        "i'm disappointed",
+        "this is the worst",
+        "i expected better",
+        "this is very poor",
+        "i am not pleased",
+        "i'm angry about this",
+        "this is not what I wanted",
+        "this sucks",
+        "not cool",
+        "this ain't good",
+        "this is trash",
+        "so bad",
+        "i'm done with this",
+        "this is bs"
       ],
       "responses": [
-        "I'm sorry to hear that. Can you tell me what went wrong?",
-        "I apologize — we'll try to fix this."
+        "I'm sorry to hear that. Could you share more details?",
+        "I apologize — let's try to fix this.",
+        "Thanks for telling me. I'll help you with this."
+      ]
+    },
+
+    {
+      "tag": "praise",
+      "patterns": [
+        "this is great",
+        "i love this",
+        "awesome service",
+        "good job",
+        "amazing",
+        "i'm happy",
+        "this is perfect",
+        "i like this",
+        "wonderful",
+        "excellent work",
+        "well done",
+        "this is fantastic",
+        "i'm impressed",
+        "this is really good",
+        "you did well",
+        "this is helpful",
+        "nice work",
+        "i enjoy this",
+        "this is dope",
+        "this is fire",
+        "really cool",
+        "solid work",
+        "clean work",
+        "that's nice",
+        "love it",
+        "this is sick"
+      ],
+      "responses": [
+        "Thank you! That means a lot.",
+        "Glad to hear it! I'm here to help whenever you need.",
+        "Awesome! Let me know if there's anything more I can do."
+      ]
+    },
+
+    {
+      "tag": "confusion",
+      "patterns": [
+        "i don't understand",
+        "this is confusing",
+        "i'm lost",
+        "what does this mean",
+        "i'm not sure what you're saying",
+        "could you explain",
+        "i don't get it",
+        "say that again",
+        "can you clarify",
+        "this doesn't make sense",
+        "i'm confused about this",
+        "not clear to me",
+        "could you simplify that",
+        "explain this to me",
+        "huh?",
+        "what are you saying",
+        "idk what that means",
+        "what does that even mean",
+        "bro what?",
+        "wait what"
+      ],
+      "responses": [
+        "Sure — let me explain that in a simpler way.",
+        "No problem. What part is confusing?",
+        "Happy to clarify! What should I explain?"
+      ]
+    },
+
+    {
+      "tag": "sadness",
+      "patterns": [
+        "i feel sad",
+        "i am feeling down",
+        "i'm depressed",
+        "i feel lonely",
+        "i feel terrible",
+        "i'm not okay",
+        "i am heartbroken",
+        "i'm feeling low",
+        "i feel empty",
+        "i'm going through a hard time",
+        "i'm struggling",
+        "i feel weak",
+        "i feel hopeless",
+        "i feel anxious",
+        "feeling down",
+        "i'm so done",
+        "i feel broken",
+        "life is tough",
+        "i feel terrible right now",
+        "i'm in pain"
+      ],
+      "responses": [
+        "I'm really sorry you're feeling this way. Want to talk about it?",
+        "That sounds really tough. I'm here to listen.",
+        "I may not fully understand, but I'm here if you want to share more."
+      ]
+    },
+
+    {
+      "tag": "anger",
+      "patterns": [
+        "i am angry",
+        "i'm mad",
+        "i'm furious",
+        "this makes me angry",
+        "i can't take this",
+        "i am really irritated",
+        "i'm annoyed",
+        "i feel enraged",
+        "i'm very upset",
+        "this situation is infuriating",
+        "i'm pissed",
+        "i'm freaking mad",
+        "why is this happening",
+        "this is driving me crazy",
+        "i can't deal with this",
+        "this is irritating",
+        "i'm heated",
+        "so annoying"
+      ],
+      "responses": [
+        "It sounds like you're very frustrated. Want to tell me what happened?",
+        "I understand this must be upsetting. How can I help?",
+        "I'm here — feel free to share what's causing the anger."
+      ]
+    },
+
+    {
+      "tag": "help_request",
+      "patterns": [
+        "i need help",
+        "can you help me",
+        "please assist me",
+        "i need support",
+        "can you do something",
+        "help me please",
+        "i need guidance",
+        "can you give me information",
+        "could you help with this",
+        "i need your help",
+        "can you sort this out",
+        "i need some assistance",
+        "can you help me out",
+        "help me out please"
+      ],
+      "responses": [
+        "Of course! What do you need help with?",
+        "I'm here to assist — tell me what you need.",
+        "Sure! Let me know the issue."
+      ]
+    },
+
+    {
+      "tag": "smalltalk",
+      "patterns": [
+        "how are you",
+        "what's up",
+        "how's it going",
+        "how are things",
+        "how do you feel",
+        "what are you doing",
+        "how is your day",
+        "how's everything",
+        "how have you been",
+        "what's going on",
+        "wassup",
+        "wyd",
+        "what are you up to"
+      ],
+      "responses": [
+        "I'm doing great! Thanks for asking. How about you?",
+        "All good here! How is your day going?",
+        "Feeling helpful today! How can I assist?"
+      ]
+    },
+
+    {
+      "tag": "information_request",
+      "patterns": [
+        "i need information",
+        "can you give me info",
+        "tell me something",
+        "i have a question",
+        "i want to know something",
+        "can you explain this topic",
+        "give me details",
+        "i need clarification about something",
+        "can you give me more info",
+        "what is this about"
+      ],
+      "responses": [
+        "Sure — what information are you looking for?",
+        "I'd be happy to explain. What would you like to know?",
+        "Ask me anything — I'm here to help."
+      ]
+    },
+
+    {
+      "tag": "unknown",
+      "patterns": [
+        "nonsense text",
+        "random words",
+        "i don't know what i'm saying",
+        "no idea what this means",
+        "just typing something",
+        "this is meaningless",
+        "not sure why i wrote that",
+        "unrelated message",
+        "blah blah blah",
+        "idk",
+        "whatever",
+        "no clue",
+        "i don't know"
+      ],
+      "responses": [
+        "I'm not sure I understand — could you rephrase that?",
+        "Can you say that in another way?",
+        "I didn't quite get that. Want to try again?"
       ]
     }
   ]

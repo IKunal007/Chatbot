@@ -1,0 +1,14 @@
+[
+    {
+        "User_text": "Hi",
+        "label": "Neutral",
+        "score": 0.0,
+        "Bot_reply": "Hi there! What's on your mind?"
+    },
+    {
+        "User_text": "This is so sad",
+        "label": "Negative",
+        "score": -0.6113,
+        "Bot_reply": "I'm really sorry you're feeling this way. Want to talk about it?"
+    }
+]
