@@ -1,14 +1,14 @@
 [
     {
-        "User_text": "Hi",
+        "User_text": "hello",
+        "Bot_reply": "Hey! How can I help you today?",
         "label": "Neutral",
-        "score": 0.0,
-        "Bot_reply": "Hi there! What's on your mind?"
+        "score": 0.0
     },
     {
-        "User_text": "This is so sad",
-        "label": "Negative",
-        "score": -0.6113,
-        "Bot_reply": "I'm really sorry you're feeling this way. Want to talk about it?"
+        "User_text": "ok bye",
+        "Bot_reply": "Have a great day!",
+        "label": "Positive",
+        "score": 0.296
     }
 ]

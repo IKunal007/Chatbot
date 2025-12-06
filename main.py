@@ -1,10 +1,9 @@
 from pathlib import Path
 
 from chatbot.bot_logic import SimpleRetrievalBot
-from chatbot.sentiment import get_sentiment_label_and_score, analyze_trend
+from chatbot.sentiment import get_sentiment_label_and_score, analyze_trend, summarize_conversation
 from chatbot.history import save_history
 from chatbot.export_chat import export_chat
-from chatbot.summarize import summarize_conversation
 
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from sklearn.feature_extraction.text import TfidfVectorizer

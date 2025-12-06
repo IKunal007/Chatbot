@@ -116,8 +116,8 @@
       ],
       "responses": [
         "I'm sorry to hear that. Could you share more details?",
-        "I apologize — let's try to fix this.",
-        "Thanks for telling me. I'll help you with this."
+        "I apologize - let's try to fix this.",
+        "I apologize. I'll try and help you with this."
       ]
     },
 
@@ -183,7 +183,7 @@
         "wait what"
       ],
       "responses": [
-        "Sure — let me explain that in a simpler way.",
+        "Sure - let me explain that in a simpler way.",
         "No problem. What part is confusing?",
         "Happy to clarify! What should I explain?"
       ]
@@ -245,7 +245,7 @@
       "responses": [
         "It sounds like you're very frustrated. Want to tell me what happened?",
         "I understand this must be upsetting. How can I help?",
-        "I'm here — feel free to share what's causing the anger."
+        "I'm here - feel free to share what's causing the anger."
       ]
     },
 
@@ -269,7 +269,7 @@
       ],
       "responses": [
         "Of course! What do you need help with?",
-        "I'm here to assist — tell me what you need.",
+        "I'm here to assist - tell me what you need.",
         "Sure! Let me know the issue."
       ]
     },
@@ -313,9 +313,9 @@
         "what is this about"
       ],
       "responses": [
-        "Sure — what information are you looking for?",
+        "Sure - what information are you looking for?",
         "I'd be happy to explain. What would you like to know?",
-        "Ask me anything — I'm here to help."
+        "Ask me anything - I'm here to help."
       ]
     },
 
@@ -337,7 +337,7 @@
         "i don't know"
       ],
       "responses": [
-        "I'm not sure I understand — could you rephrase that?",
+        "I'm not sure I understand - could you rephrase that?",
         "Can you say that in another way?",
         "I didn't quite get that. Want to try again?"
       ]
