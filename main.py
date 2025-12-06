@@ -6,9 +6,6 @@ from chatbot.history import save_history
 from chatbot.export_chat import export_chat
 
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
-
 INTENTS_PATH = Path("intents.json")
 
 def main():
