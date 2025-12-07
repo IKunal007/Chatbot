@@ -179,12 +179,11 @@ def main():
                 st.session_state.export_done = False
                 st.rerun()
     else:
-        st.caption("Type your message below and press Enter to chat with the bot.")
-
         st.markdown(
         "_To end the conversation type_ `/quit`, `quit` _or_ `exit` "
         )
 
+        st.caption("Type your message below and press Enter to chat with the bot.")
 
 if __name__ == "__main__":
     main()

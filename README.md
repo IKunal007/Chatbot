@@ -183,7 +183,15 @@ Instead of a simple console chatbot, the entire interaction happens through:
 - **Auto-scrolling chat history**
 - A **3-section layout** displayed after ending a conversation
 
-### 3. Per-Message Sentiment Visualization 
+### 3. Deployed on Streamlit Community Cloud
+
+The entire application is deployed and accessible online via **Streamlit Community Cloud**:
+
+- **No setup required**
+- Runs **directly in the browser**  
+- Always uses the **latest version** from GitHub  
+
+### 4. Per-Message Sentiment Visualization 
 
 A custom sentiment trend graph was added which:
 
@@ -191,7 +199,7 @@ A custom sentiment trend graph was added which:
 - **Maps** each intensity to *Positive / Neutral / Negative*  
 - **Visualizes** emotional changes over time through a dynamic trend line
 
-### 4. History Page with Multi-Chat Review
+### 5. History Page with Multi-Chat Review
 
 A dedicated page lets users:
 
