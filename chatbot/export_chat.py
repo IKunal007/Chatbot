@@ -5,7 +5,6 @@ def export_chat(history, filename=None):
     """
     Export the chat history to a text file in a clean, readable format.
     """
-    # If no filename provided → create one with timestamp
 
     export_dir =  Path("data")
     if filename is None:

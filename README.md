@@ -1,12 +1,16 @@
 
 # Ares Chatbot
 
-This chatbot maintains the full conversation history, performs per-message sentiment analysis, 
+This is a Rule-based chatbot that maintains full conversation history, performs per-message sentiment analysis, 
 and at the end computes an overall sentiment and mood trend.
 
 ## How to Run
 
 ### Option 1
+
+You can use the chatbot directly without installing anything:
+
+https://chatbot-rmd9fkppjfzsnugckstnm5.streamlit.app
 ---
 
 ### Option 2
@@ -47,13 +51,13 @@ http://localhost:8501
 
 ### 5. Ending a conversation
 
-Computes full conversation sentiment
+- Computes full conversation sentiment
 
-Analyzes mood trend
+- Analyzes mood trend
 
-Stores the chat under the Chat History page
+- Stores the chat under the Chat History page
 
-Displays navigation buttons for analysis or starting a new chat
+- Displays navigation buttons for analysis or starting a new chat
 
 ##  Chosen Technologies
 
@@ -158,4 +162,40 @@ pytest
 python -m pytest
 ```
 
-These tests run entirely on backend logic and do not depend on Streamlit, ensuring fast and reliable testing of the core engine.        
+These tests run entirely on backend logic and do not depend on Streamlit, ensuring fast and reliable testing of the core engine.
+
+## Additional Features
+
+### 1. Multi-Chat Session Support 
+
+The application stores every completed conversation in memory, allowing users to:
+
+- **Review** previous chats  
+- **Analyze** any past conversation  
+- **Switch** between chats easily
+
+
+### 2. Full Frontend UI Using Streamlit 
+
+Instead of a simple console chatbot, the entire interaction happens through:
+
+- **Chat-style message bubbles**
+- **Auto-scrolling chat history**
+- A **3-section layout** displayed after ending a conversation
+
+### 3. Per-Message Sentiment Visualization 
+
+A custom sentiment trend graph was added which:
+
+- **Plots** message-level sentiment intensities  
+- **Maps** each intensity to *Positive / Neutral / Negative*  
+- **Visualizes** emotional changes over time through a dynamic trend line
+
+### 4. History Page with Multi-Chat Review
+
+A dedicated page lets users:
+
+- **Browse** all past conversations  
+- **Open** any chat to view the full message history  
+- **Download** chats for submission or record-keeping
+

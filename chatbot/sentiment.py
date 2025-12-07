@@ -1,5 +1,4 @@
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
-import random
 
 sia = SentimentIntensityAnalyzer()
 
@@ -25,10 +24,7 @@ def score_to_label(score: float) -> str:
 
 
 def analyze_trend(history_scores):
-    """
-    history_scores: list of VADER compound scores (floats)
-    Returns a human-readable trend description.
-    """
+
     if len(history_scores) < 2:
         return "Not enough data to determine mood trend."
 
@@ -51,10 +47,7 @@ def analyze_trend(history_scores):
     return trend
 
 def summarize_conversation(history):
-    """
-    history: list of dicts with at least a 'score' key (VADER compound)
-    returns: overall_label, rationale_text
-    """
+
     scores = [h["score"] for h in history]
     if not scores:
         return "Neutral", "no messages to analyze."
@@ -70,9 +63,6 @@ def summarize_conversation(history):
     # weighted sentiment: strong emotions count more
     weighted_score = sum(s * w for s, w in zip(scores, weights)) / total_weight
 
-    # emotional intensity (how strong feelings were overall)
-    avg_intensity = total_weight / len(scores)
-
     # determine overall label from weighted score
     if weighted_score >= 0.05:
         overall = "Positive"
@@ -80,15 +70,6 @@ def summarize_conversation(history):
         overall = "Negative"
     else:
         overall = "Neutral"
-
-    # build rationale
-    if avg_intensity < 0.2:
-        intensity_desc = "low emotional intensity"
-    elif avg_intensity < 0.5:
-        intensity_desc = "moderate emotional intensity"
-    else:
-        intensity_desc = "high emotional intensity"
-
 
     return overall
 

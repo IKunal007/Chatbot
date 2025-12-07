@@ -1,8 +1,7 @@
 # pages/1_Conversation_Analysis.py
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt  # altair import not needed now
-
+import matplotlib.pyplot as plt  
 from chatbot.sentiment import analyze_trend, summarize_conversation
 
 
@@ -19,10 +18,9 @@ def plot_simple_sentiment_graph(history):
     # Zero (neutral) reference line
     ax.axhline(0, color="gray", linewidth=1, linestyle="--", alpha=0.7)
 
-    # Limit to [-1, 1] which is VADER's natural range
+    # Limit to [-1, 1] 
     ax.set_ylim(-1, 1)
 
-    # Show categories as tick labels, but keep intensity in between
     ax.set_yticks([-1, 0, 1])
     ax.set_yticklabels(["Negative", "Neutral", "Positive"], fontsize=12)
 

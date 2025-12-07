@@ -1,7 +1,6 @@
 import sys
 import os
 
-# Ensure main.py is importable
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from main import SimpleRetrievalBot, INTENTS_PATH

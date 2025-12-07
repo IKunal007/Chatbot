@@ -93,13 +93,9 @@ def main():
         "computes an **overall sentiment** and **mood trend**."
     )
 
-    st.markdown(
-        "_To end the conversation type_ `/quit`, `quit` _or_ `exit` "
-    )
-
     st.divider()
 
-    # ---------- SECTION 2: MAIN CONTENT (chat OR summary) ----------
+    # ---------- SECTION 2: MAIN CONTENT (chat) ----------
     if finished:
         # Conversation ended → show summary only (no full chat)
         st.subheader("Conversation Summary")
@@ -134,7 +130,7 @@ def main():
             text = user_input.strip()
             lower = text.lower()
 
-            # quit/exit commands → behave like main.py (end loop)
+            # exit commands (end loop)
             if lower in QUIT_COMMANDS:
                 end_conversation()
             else:
@@ -184,6 +180,10 @@ def main():
                 st.rerun()
     else:
         st.caption("Type your message below and press Enter to chat with the bot.")
+
+        st.markdown(
+        "_To end the conversation type_ `/quit`, `quit` _or_ `exit` "
+        )
 
 
 if __name__ == "__main__":

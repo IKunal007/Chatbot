@@ -16,7 +16,7 @@ def main():
     bot = SimpleRetrievalBot(INTENTS_PATH, min_confidence=0.3)
 
     # Conversation history
-    history = []  # list of {"text":..., "label":..., "score":..., "Bot_reply":...}
+    history = [] 
 
     print("Chatbot ready. Type '/quit' to exit.\n")
     while True:
