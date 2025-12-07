@@ -1,7 +1,7 @@
 
 # Ares Chatbot
 
-This is a Rule-based chatbot that maintains full conversation history, performs per-message sentiment analysis, 
+This is a Retrieval-based chatbot that maintains full conversation history, performs per-message sentiment analysis, 
 and at the end computes an overall sentiment and mood trend.
 
 ## How to Run
