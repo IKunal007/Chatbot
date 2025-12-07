@@ -23,6 +23,16 @@ def main():
     selected = chats[chat_index]
 
     st.markdown("---")
+    st.subheader("Download This Conversation")
+
+    st.download_button(
+        label="Download Chat as TXT",
+        data=selected["export_text"],
+        file_name=f"chat_{chat_index + 1}.txt",
+        mime="text/plain",
+    )
+
+    st.markdown("---")
     st.subheader(f"Chat {chat_index + 1} Summary")
 
     st.markdown(f"**Overall Sentiment:** {selected['overall']}")
@@ -39,15 +49,7 @@ def main():
         with st.chat_message("assistant"):
             st.markdown(turn["Bot_reply"])
 
-    st.markdown("---")
-    st.subheader("Download This Conversation")
 
-    st.download_button(
-        label="Download Chat as TXT",
-        data=selected["export_text"],
-        file_name=f"chat_{chat_index + 1}.txt",
-        mime="text/plain",
-    )
 
 
 if __name__ == "__main__":
