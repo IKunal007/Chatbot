@@ -70,6 +70,15 @@ def end_conversation():
         }
     )
 
+    # Build final one-line conclusion
+    if overall == "Positive":
+        conclusion = "General satisfaction"
+    elif overall == "Negative":
+        conclusion = "General dissatisfactoin."
+    else:
+        conclusion = "Balanced emotional tone."
+
+    st.session_state.conclusion = conclusion
     st.session_state.overall_label = overall
     st.session_state.trend = trend
     st.session_state.finished = True
@@ -102,7 +111,7 @@ def main():
         st.success("The conversation has ended.")
 
         st.markdown(
-            f"**Overall conversation sentiment:** {st.session_state.overall_label}"
+            f"**Overall conversation sentiment:** {st.session_state.overall_label} - {st.session_state.conclusion}"
         )
         st.markdown(f"**Mood trend:** {st.session_state.trend}")
         st.markdown(
